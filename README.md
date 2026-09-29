@@ -1,12 +1,12 @@
 # Dave project webmap
 
-This repository contains a static web map that can be published with GitHub Pages.
+This repository is configured for a single static GitHub Pages deployment.
 
 ## Live site
 
-After pushing to GitHub, the site will be available at:
+Once the repository is pushed and GitHub Pages is enabled, the site will be available at:
 
-https://<your-github-username>.github.io/<your-repository-name>/
+https://<your-github-username>.github.io/Daves-webmap/
 
 The root page redirects visitors to the story map in the `my-story-map/` folder.
 
@@ -25,9 +25,9 @@ Then open:
 
 ## Publish to GitHub Pages
 
-1. Push this folder to a new GitHub repository.
+1. Push this repository to GitHub.
 2. In GitHub, open Settings → Pages.
 3. Set Source to "GitHub Actions".
-4. The included workflow in `.github/workflows/pages.yml` will deploy the site automatically.
+4. The workflow in `.github/workflows/pages.yml` will deploy the site automatically.
 
-This setup keeps the map assets, CSV data, and annotation images in the repository so the relative paths continue to work on the hosted site.
+This setup keeps one clean static site with the map assets, CSV data, and annotation images in the same repository so the relative links keep working on the live site.
